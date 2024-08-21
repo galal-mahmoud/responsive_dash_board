@@ -1,7 +1,5 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/core/utlis/app_router.dart';
 
 void main(){
   runApp(const ResponsiveDashBord());
@@ -12,9 +10,9 @@ class ResponsiveDashBord extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp.router(
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
-
     );
   }
 }
