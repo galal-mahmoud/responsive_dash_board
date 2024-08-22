@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:responsive_dash_board/Features/splash/presentation/views/widgets/sliding_animation_text.dart';
 import 'package:responsive_dash_board/core/utlis/app_router.dart';
+
+import '../../../../../generated/assets.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -37,7 +40,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('Dash Board'),
+          SvgPicture.asset(Assets.imagesFrame),
           const SizedBox(
             height: 4,
           ),
