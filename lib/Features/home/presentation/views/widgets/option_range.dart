@@ -10,7 +10,7 @@ class OptionRange extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsetsDirectional.all(8.0),
+      padding: const EdgeInsetsDirectional.all(6.0),
       decoration: BoxDecoration(
         color: const Color(0xffFFFFFF),
         borderRadius: BorderRadius.circular(12.0),

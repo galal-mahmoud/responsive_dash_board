@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_dash_board/Features/home/presentation/manager/dealing_model.dart';
+import 'package:responsive_dash_board/Features/home/presentation/manager/info_list_tile_model.dart';
 import 'package:responsive_dash_board/Features/home/presentation/views/widgets/active_and_not_active_custom_dealing.dart';
 import '../../../../../generated/assets.dart';
 import 'custom_dealing_list_view.dart';
@@ -13,13 +14,13 @@ class CustomDrawerWidget extends StatelessWidget {
       color: CupertinoColors.white,
       child:  CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(child: InfoListTile(title: 'Lekan Okeowo', subTitle: 'demo@gmail.com', image: Assets.imagesFrame)),
+          const SliverToBoxAdapter(child: InfoListTile(infoListTileModel: InfoListTileModel(title: 'Lekan Okeowo', image: Assets.imagesFrame, subTitle: 'demo@gmail.com'),)),
           const SliverToBoxAdapter(
             child: SizedBox(
               height: 20.0,
             ),
           ),
-          CustomDealingListView(),
+          const CustomDealingListView(),
           SliverFillRemaining(
             hasScrollBody: false,
             child: Column(

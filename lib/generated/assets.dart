@@ -2,13 +2,19 @@
 class Assets {
   Assets._();
 
+  static const String fontsMontserratBold = 'assets/fonts/Montserrat-Bold.ttf';
+  static const String fontsMontserratMedium = 'assets/fonts/Montserrat-Medium.ttf';
   static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
+  static const String fontsMontserratSemiBold = 'assets/fonts/Montserrat-SemiBold.ttf';
   static const String imagesAvater1 = 'assets/images/avater_1.svg';
   static const String imagesAvater2 = 'assets/images/avater_2.svg';
   static const String imagesBalance = 'assets/images/balance.svg';
+  static const String imagesBalanceWhite = 'assets/images/balance_white.svg';
   static const String imagesDashBoard = 'assets/images/dash_board.svg';
   static const String imagesExpenses = 'assets/images/Expenses.svg';
+  static const String imagesExpensesWhite = 'assets/images/expenses_white.svg';
   static const String imagesFrame = 'assets/images/Frame.svg';
+  static const String imagesIncomWhite = 'assets/images/Incom_white.svg';
   static const String imagesIncome = 'assets/images/Income.svg';
   static const String imagesLogout = 'assets/images/logout.svg';
   static const String imagesMaskGroup = 'assets/images/MaskGroup.svg';

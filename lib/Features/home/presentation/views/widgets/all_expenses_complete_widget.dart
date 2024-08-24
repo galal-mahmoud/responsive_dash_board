@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/utlis/app_styles.dart';
+import 'all_expenses_header.dart';
 import 'all_expnsese_item_row.dart';
-import 'option_range.dart';
 
 class AllExpensesCompleteWidget extends StatelessWidget {
   const AllExpensesCompleteWidget({
@@ -11,33 +10,18 @@ class AllExpensesCompleteWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsetsDirectional.all(20.0),
-      decoration: buildBoxDecoration(),
+      padding: const EdgeInsetsDirectional.all(16.0),
+      decoration: BoxDecoration(
+          color: const Color(0xffFFFFFF),
+          borderRadius: BorderRadius.circular(12.0)
+      ),
       child:  const Column(
         children: [
-          Row(
-            children: [
-              Text(
-                'All Expenses',
-                style: AppStyles.styleSemiBold20,
-              ),
-              Expanded(
-                child: SizedBox(
-
-                ),
-              ),
-              OptionRange(),
-            ],
-          ),
+          AllExpensesHeader(),
           AllExpnseseItemRow(),
         ],
       ),
     );
   }
-  BoxDecoration buildBoxDecoration() {
-    return BoxDecoration(
-        color: const Color(0xffFFFFFF),
-        borderRadius: BorderRadius.circular(12.0)
-    );
-  }
 }
+

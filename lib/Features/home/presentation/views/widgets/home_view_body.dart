@@ -15,9 +15,12 @@ class HomeViewBody extends StatelessWidget {
           width: 32.0,
         ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: CustomAllExpenses(),
         ),
+        Expanded(
+          flex: 2,
+          child: Column(),),
       ],
     );
   }

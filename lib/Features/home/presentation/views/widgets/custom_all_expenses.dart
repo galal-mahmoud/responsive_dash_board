@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/Features/home/presentation/views/widgets/quick_invoice_complete_widget.dart';
 import 'all_expenses_complete_widget.dart';
 
 class CustomAllExpenses extends StatelessWidget {
@@ -9,16 +10,15 @@ class CustomAllExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 40.0),
-      child: Column(
-        children: [
-          AllExpensesCompleteWidget(),
-        ],
+      padding: EdgeInsets.only(top: 24.0),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            AllExpensesCompleteWidget(),
+            QuickInvoiceCompleteWidget(),
+          ],
+        ),
       ),
     );
   }
-
-
 }
-
-
