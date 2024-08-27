@@ -1,31 +1,18 @@
 import 'package:flutter/cupertino.dart';
-import 'package:responsive_dash_board/Features/home/presentation/views/widgets/custom_drawer_widget.dart';
-import 'package:responsive_dash_board/Features/home/presentation/views/widgets/my_card_transaction_Income.dart';
-import 'custom_all_expenses.dart';
+import 'package:responsive_dash_board/Features/home/presentation/views/widgets/adaptive_layout.dart';
+import 'package:responsive_dash_board/Features/home/presentation/views/widgets/mobile_app.dart';
+import 'package:responsive_dash_board/Features/home/presentation/views/widgets/tablet_app.dart';
+import 'desktop_app.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      children: [
-        Expanded(child: CustomDrawerWidget()),
-        SizedBox(
-          width: 32.0,
-        ),
-        Expanded(
-          flex: 3,
-          child: CustomAllExpenses(),
-        ),
-        SizedBox(
-          width: 24.0,
-        ),
-        Expanded(
-          flex: 2,
-          child: MyCardTransactionIncome()
-        ),
-      ],
+    return AdaptiveLayout(
+      mobileApp: (context) => const MobileApp(),
+      desktopApp: (context) => const DesktopApp(),
+      tabletApp: (context) => const TabletApp(),
     );
   }
 }
