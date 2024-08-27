@@ -14,11 +14,13 @@ class Assets {
   static const String imagesExpenses = 'assets/images/Expenses.svg';
   static const String imagesExpensesWhite = 'assets/images/expenses_white.svg';
   static const String imagesFrame = 'assets/images/Frame.svg';
+  static const String imagesGallery = 'assets/images/gallery.svg';
   static const String imagesIncomWhite = 'assets/images/Incom_white.svg';
   static const String imagesIncome = 'assets/images/Income.svg';
   static const String imagesLogout = 'assets/images/logout.svg';
   static const String imagesMaskGroup = 'assets/images/MaskGroup.svg';
   static const String imagesMtInvestments = 'assets/images/mt_investments.svg';
+  static const String imagesMyCardBackground = 'assets/images/my_card_background.png';
   static const String imagesMyTransaction = 'assets/images/my_transaction.svg';
   static const String imagesSetting2 = 'assets/images/setting-2.svg';
   static const String imagesStatistics = 'assets/images/statistics.svg';

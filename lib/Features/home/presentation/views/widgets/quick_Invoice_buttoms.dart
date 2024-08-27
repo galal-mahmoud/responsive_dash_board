@@ -11,6 +11,9 @@ class QuickInvoiceButtoms extends StatelessWidget {
         Expanded(
           child: CustomButtom(content: 'Add more details'),
         ),
+        SizedBox(
+          width: 24,
+        ),
         Expanded(
           child: CustomButtom(
             content: 'Send money',

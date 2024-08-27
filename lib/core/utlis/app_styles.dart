@@ -47,9 +47,24 @@ abstract class AppStyles{
     fontSize: 12,
     fontFamily: 'Regular',
   );
+  static const TextStyle styleSemiBold12 = TextStyle(
+    color: Color(0xffAAAAAA),
+    fontSize: 12,
+    fontFamily: 'SemiBold',
+  );
+  static const TextStyle styleMedium12 = TextStyle(
+    color: Color(0xffAAAAAA),
+    fontSize: 12,
+    fontFamily: 'Medium',
+  );
   static const TextStyle styleRegular14 = TextStyle(
     color: Color(0xff064060),
     fontSize: 14,
     fontFamily: 'Regular',
+  );
+  static const TextStyle styleSemiBold14 = TextStyle(
+    color: Color(0xff064060),
+    fontSize: 14,
+    fontFamily: 'SemiBold',
   );
 }

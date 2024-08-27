@@ -19,11 +19,15 @@ class QuickInvoiceCompleteWidget extends StatelessWidget {
       child:  const Column(
         children: [
           QuickInvoiceHeader(),
+          SizedBox(height: 24.0,),
           LatestTransaction(),
           Divider(
             height: 48,
           ),
           CustomerInfoForm(),
+          SizedBox(
+            height: 14,
+          ),
           QuickInvoiceButtoms(),
         ],
       ),

@@ -17,7 +17,7 @@ class NotActiveCustomDealing extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16.0),
       child: SizedBox(
-        height: 32.0,
+        height: 48.0,
         child: ListTile(
           title: Text(
             dealingModel.text,
@@ -42,10 +42,10 @@ class ActiveCustomDealing extends StatelessWidget {
         child: ListTile(
           title: FittedBox(
             alignment: Alignment.topLeft,
-            fit: BoxFit.scaleDown,
+            fit: BoxFit.fill,
             child: Text(
               dealingModel.text,
-              style: AppStyles.styleRegular14.copyWith(
+              style: AppStyles.styleRegular16.copyWith(
                 color: const Color(0xff4EB7F2),
                 fontWeight: FontWeight.bold,
               ),

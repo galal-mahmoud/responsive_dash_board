@@ -10,7 +10,7 @@ class CustomAllExpenses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 24.0),
+      padding: EdgeInsets.only(top: 16.0),
       child: SingleChildScrollView(
         child: Column(
           children: [

@@ -20,7 +20,7 @@ class OptionRange extends StatelessWidget {
         children: [
           const Text(
             'Monthly',
-            style: AppStyles.styleBold16,
+            style: AppStyles.styleSemiBold14,
           ),
           const SizedBox(
             width: 18.0,
